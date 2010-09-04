@@ -1,0 +1,18 @@
+ <h1>Easy Floater</h1>
+ easy flash floaters with alternative content for iPad and iPhone 
+ created in 04/09/2010 
+ by: brunomarks (MKT VIRTUAL) - brunomarks@gmail.com
+ depends: Flash Embed - http://flowplayer.org/tools/toolbox/flashembed.html
+ 
+ <h4>how to use:</h4>
+       
+window.load = easyFloater.init({
+    width : 600, //your div width in pixels
+    height : 620, //your div heigth in pixels
+    top : 20, distance of top in pixels
+    id : 'floater', 'your flash identification (<embed id="floater">)'
+    color : 'red', //your div background color 
+    flashVars : {URL_BASE : URL_BASE}, //object with flashvars content
+    src : URL_BASE + "swf/floater.swf",
+    alternativeBg : URL_BASE + 'imagens/fake_foto.jpg' //bg if iPad or iPhone
+  });
