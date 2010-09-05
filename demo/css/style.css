@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  }
+  header, section, footer, aside, nav, article, figure{
+    display: block;   
+    }
+#super{		
+	position:relative;
+	overflow:hidden;
+	background-position:center top;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	min-height:100%;
+  _height:100%;				
+  }	
+	html, body {
+		height: 100%;
+		}
+		body{
+			background:url('../imagens/bg.png') repeat-x scroll left top transparent;
+		  }
