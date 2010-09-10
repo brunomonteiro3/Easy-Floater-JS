@@ -26,7 +26,7 @@ var easyFloater = {
       //verifica que se Ipad ou Iphone
       var checkIphoneOS = this.iPad_or_iPhone();
       var created = this.createElement(args);      
-      if(checkIphoneOS){        
+      if(!checkIphoneOS){        
         this.embedFlash(args);                
       }else{        
         this.alternativeContent(args);
