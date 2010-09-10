@@ -60,7 +60,7 @@ var easyFloater = {
         var closeFloater = document.createElement('div');        
         closeFloater.setAttribute('id', 'right_deprecated');
         closeFloater.style.textAlign = "right"
-        closeFloater.innerHTML = '<a onClick="removeFloater()" id="closeFloater"><img style="float:right;" src="http://github.com/mktvirtual/Deprecated-Browser/raw/multi-language/images/xis.png" alt="Fechar" /></a><br/><img src="'+ob.alternativeBg+'" />';
+        closeFloater.innerHTML = '<a onClick="removeFloater()" id="closeFloater"><img style="float:right;" src="imagens/close.png" alt="Fechar" /></a><br/><a target="_blank" href="'+ ob.alternativeLink +'"><img src="'+ob.alternativeBg+'" /></a>';
         el.appendChild(closeFloater);
   },
   iPad_or_iPhone : function(){    

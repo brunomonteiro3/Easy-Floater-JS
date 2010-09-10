@@ -15,8 +15,8 @@
       
   </section>
    
-  <script src="js/toolbox.flashembed.min.js?v=1"></script>
-  <script src="js/easyFloater.min.js?v=1"></script>
+  <script src="js/toolbox.flashembed.js?v=1"></script>
+  <script src="js/easyFloater.js?v=1"></script>
   <script src="js/default.js?v=1"></script>
 
 </body>

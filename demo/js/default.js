@@ -1,4 +1,4 @@
-var URL_BASE = 'http://localhost/easyFloater/demo/';
+var URL_BASE = 'http://www.mktvirtual.com.br/lab/easyfloater/';
 
 var yoursite = {
   init : function(){
@@ -10,7 +10,8 @@ var yoursite = {
           color : 'transparent', //your div background color 
           flashVars : {URL_BASE : URL_BASE}, //object with flashvars content
           src : URL_BASE + "swf/floater.swf",
-          alternativeBg : URL_BASE + 'imagens/alternative.jpg' //bg if iPad or iPhone
+          alternativeBg : URL_BASE + 'imagens/alternative.jpg', //bg if iPad or iPhone
+		  alternativeLink : 'http://www.google.com.br'
         });  
   }
 }
