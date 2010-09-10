@@ -1,7 +1,7 @@
 /*!
  * easyFloater
  * easy flash floaters with alternative content for iPad and iPhone 
- * on github: http://github.com/brunomarks/Easy-Floater-JS/
+ * on github:
  * created in 04/09/2010 
  * by: brunomarks (MKT VIRTUAL) 
  * brunomarks@gmail.com
@@ -60,7 +60,7 @@ var easyFloater = {
         var closeFloater = document.createElement('div');        
         closeFloater.setAttribute('id', 'right_deprecated');
         closeFloater.style.textAlign = "right"
-        closeFloater.innerHTML = '<a onClick="removeFloater()" id="closeFloater"><img style="float:right;" src="http://github.com/brunomarks/Easy-Floater-JS/raw/master/demo/imagens/close.png" alt="Fechar" /></a><br/><img src="'+ob.alternativeBg+'" />';
+        closeFloater.innerHTML = '<a onClick="removeFloater()" id="closeFloater"><img style="float:right;" src="imagens/close.png" alt="Fechar" /></a><br/><a target="_blank" href="'+ ob.alternativeLink +'"><img src="'+ob.alternativeBg+'" /></a>';
         el.appendChild(closeFloater);
   },
   iPad_or_iPhone : function(){    
@@ -73,7 +73,7 @@ var easyFloater = {
 }
 
 //called by flash - with external interface
-function removeFloater(){  
+function removeFloater(){
   var elem = document.getElementById("easyFloater");
   var father = elem.parentNode;
   var remov = father.removeChild(elem);
