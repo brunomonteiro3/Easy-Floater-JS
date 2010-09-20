@@ -24,9 +24,9 @@
 var easyFloater = {
   init : function(args){    
       //verifica que se Ipad ou Iphone
-      var checkIphoneOS = this.iPad_or_iPhone();
+      var isMobile = this.what_UA();
       var created = this.createElement(args);      
-      if(!checkIphoneOS){        
+      if(!isMobile){        
         this.embedFlash(args);                
       }else{        
         this.alternativeContent(args);
@@ -63,12 +63,28 @@ var easyFloater = {
         closeFloater.innerHTML = '<a onClick="removeFloater()" id="closeFloater"><img style="float:right;" src="imagens/close.png" alt="Fechar" /></a><br/><a target="_blank" href="'+ ob.alternativeLink +'"><img border="0" src="'+ob.alternativeBg+'" /></a>';
         el.appendChild(closeFloater);
   },
-  iPad_or_iPhone : function(){    
-    if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))) {
-       return true;
+  what_UA : function(){ //what user agent?   
+		
+	var ua = navigator.userAgent.toLowerCase();
+	var uMobile = '';	
+	uMobile = '';
+	uMobile += 'iphone;ipod;ipad;android 1.6;android 1.5';
+
+	// Sapara os itens individualmente em um array
+	v_uMobile = uMobile.split(';');
+	// percorre todos os itens verificando se eh mobile
+	var boolMovel = false;
+	for (i=0;i<=v_uMobile.length;i++){		
+	    if (ua.indexOf(v_uMobile[i]) != -1){
+            boolMovel = true;
+        }
+	}	
+	if (boolMovel == true){
+   		return true
     }else{
-       return false;
-    }
+		return false;
+	}
+
   }  
 }
 
